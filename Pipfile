@@ -5,3 +5,9 @@ name = "pypi"
 
 [requires]
 python_version = "3.11"
+
+[packages]
+mkdocs = "*"
+mkdocs-material = "*"
+mkdocs-rss-plugin = "*"
+mkdocs-blog-plugin = "*"
