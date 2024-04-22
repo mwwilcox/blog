@@ -1,16 +1,27 @@
 site_name: Jericho Blog
-repo_url: https://
+repo_url: https://github.com/mwwilcox/blog
+repo_name: mwwilcox/blog
+edit_uri: ""
+
+theme:
+  name: 'material'
+
 plugins:
-  - blog:
-      format: "(%m/%d/%y)"
-      text-align: "right"
-    # blog_dir: .
-  # - rss:
-  #   enabled: !ENV [CI, false]
-  #   match_path: blog/posts/.*
-  #   date_from_meta:
-  #     as_creation: date
-  #   categories:
-  #     - categories
-  #     - tags
-  #   # comments_path: "#__comments"
+  - blogging:
+      dirs:
+        - blog
+    # dirs:
+    #   - blog
+    # template: override/custom-blog.html
+    # categories:
+    #   - name: reviews
+    #     dirs:
+    #       - reviews
+    # time_format: '%d/%m/%y %H:%M:%S'
+    # meta_time_format: '%Y-%m-%d %H:%M:%S'
+    # features:
+    #   tags:
+    #     index_page: tags.md
+    #     insert: top
+
+copyright: Copyright &copy; 2024 Mike Wilcox
